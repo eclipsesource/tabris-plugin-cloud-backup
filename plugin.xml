@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="tabris-plugin-cloud-backup"
+        version="1.0.0">
+
+  <name>Tabris.js Cloud Backup Plugin</name>
+  <description>A plugin to configure the cloud backup of localStorage in a Tabris.js app</description>
+  <author>EclipseSource</author>
+  <license>Revised BSD License (3-clause license)</license>
+  <repo>https://github.com/eclipsesource/tabris-plugin-cloud-backup.git</repo>
+  <issue>https://github.com/eclipsesource/tabris-plugin-cloud-backup/issues</issue>
+
+  <preference name="ENABLE_CLOUD_BACKUP" />
+
+  <platform name="android">
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
+      <meta-data android:allowBackup="$ENABLE_CLOUD_BACKUP" />
+    </config-file>
+  </platform>
+
+  <platform name="ios">
+    <header-file src="src/ios/ESCloudBackup.h" />
+    <source-file src="src/ios/ESCloudBackup.m" />
+    <config-file target="config.xml" parent="/*">
+      <feature name="ESCloudBackup">
+        <param name="ios-package" value="ESCloudBackup" />
+      </feature>
+      <preference name="EnableCloudBackup" value="$ENABLE_CLOUD_BACKUP"/>
+    </config-file>
+    <js-module name="CloudBackup" src="www/CloudBackup.js">
+      <clobbers target="CloudBackup"/>
+    </js-module>
+  </platform>
+</plugin>
