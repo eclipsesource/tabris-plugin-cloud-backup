@@ -1,6 +1,9 @@
 # Tabris.js Cloud Backup Plugin
 
-`tabris-plugin-cloud-backup` configures the backup of [`localStorage`](http://docs.tabris.com/latest/api/localStorage.html#localstorage) to the device platform's backup cloud.
+`tabris-plugin-cloud-backup` configures the backup of app data to the device platform's backup cloud.
+
+On Android, it configures the backup of the domains listed in https://developer.android.com/guide/topics/data/autobackup#XMLSyntax.
+On iOS, it configures the backup of [`localStorage`](http://docs.tabris.com/latest/api/localStorage.html#localstorage).
 
 ## Integrating the plugin
 
