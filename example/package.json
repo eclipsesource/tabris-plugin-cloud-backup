@@ -1,0 +1,8 @@
+{
+  "main": "src/app.js",
+  "private": true,
+  "scripts": { "start": "tabris serve" },
+  "dependencies": {
+    "tabris": "^2.5.1"
+  }
+}
