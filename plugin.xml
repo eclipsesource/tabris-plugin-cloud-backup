@@ -14,9 +14,9 @@
   <preference name="ENABLE_CLOUD_BACKUP" />
 
   <platform name="android">
-    <config-file target="AndroidManifest.xml" parent="/manifest/application">
-      <meta-data android:allowBackup="$ENABLE_CLOUD_BACKUP" />
-    </config-file>
+    <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
+      <application android:allowBackup="$ENABLE_CLOUD_BACKUP" />
+    </edit-config>
   </platform>
 
   <platform name="ios">
