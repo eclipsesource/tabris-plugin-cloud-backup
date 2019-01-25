@@ -1,0 +1,31 @@
+{
+  "name": "tabris-plugin-cloud-backup",
+  "version": "1.0.0",
+  "description": "A plugin to configure the cloud backup of localStorage in a Tabris.js app",
+  "cordova": {
+    "id": "tabris-plugin-cloud-backup",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eclipsesource/tabris-plugin-cloud-backup.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "tabris",
+    "tabris.js",
+    "cloud",
+    "backup"
+  ],
+  "author": "EclipseSource",
+  "license": "Revised BSD License (3-clause license)",
+  "bugs": {
+    "url": "https://github.com/eclipsesource/tabris-plugin-cloud-backup/issues"
+  },
+  "homepage": "https://github.com/eclipsesource/tabris-plugin-cloud-backup#readme"
+}
