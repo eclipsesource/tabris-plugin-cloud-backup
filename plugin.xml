@@ -14,7 +14,7 @@
   <preference name="ENABLE_CLOUD_BACKUP" />
 
   <platform name="android">
-    <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
+    <edit-config file="app/src/main/AndroidManifest.xml" target="/manifest/application" mode="merge">
       <application android:allowBackup="$ENABLE_CLOUD_BACKUP" />
     </edit-config>
   </platform>
