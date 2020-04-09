@@ -1,6 +1,6 @@
 {
   "name": "tabris-plugin-cloud-backup",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A plugin to configure the cloud backup of localStorage in a Tabris.js app",
   "cordova": {
     "id": "tabris-plugin-cloud-backup",
